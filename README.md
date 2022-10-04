@@ -7,10 +7,25 @@ Run the job.sh code to generate datasets of different visual complexity. In the 
 The arguments for the batch script  are:
 
 arguments:
-  - `--source_folder`: specify the ImageNet-1K data folder (e.g., `~/imagenet/train`)
+  - `--source_folder`: specify the ILSVRC-2012 data folder (e.g., `~/ILSVRC2012/train`)
   - `--target_folder`: specify the ImageNet-100 data folder (e.g., `~/imagenet-100/train`)
   - `--target_class`: specify the ImageNet-100 txt file of different levels of visual complexity [ 'min100.txt','max100.txt','random.txt']
-  
+ An example of how to generate the train data for 100 visually simple classes is given as :
+ ```
+ python generate_IN100.py \
+        --source_folder ~/ILSVRC2012/train\
+        --target_folder ~/Imagenet-100/train\
+        --target_class tmp/min100.txt
+
+ ```
+ An example of how to generate the val data for 100 visually simple classes is given as :
+ ```
+ python generate_IN100.py \
+        --source_folder ~/ILSVRC2012/val\
+        --target_folder ~/Imagenet-100/val\
+        --target_class tmp/min100.txt
+ ```
+ 
 ## Citation
 
 ```
