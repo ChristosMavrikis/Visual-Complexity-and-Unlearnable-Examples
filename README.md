@@ -1,14 +1,16 @@
-## Visual-Complexity-and-Unlearnable-Examples
-
+# Visual-Complexity-and-Unlearnable-Examples
+This is a repository which contains the scripts used for my Master thesis **Visual Complexity and Unlearnable Examples**. This research extends the work work of Huang et al. [https://arxiv.org/abs/2101.04898] and Liu et al. [https://arxiv.org/abs/2111.13244] for visually complex images. Visual complexity  is defined by the number of objects and classes present in an image,  thireir positioning, the incongruous
+colors present in an image and th resolution. 
+Unlearnable examples are images that have been perturbed by imperceptible error-mininimizing noise that make the training set "unuseable" or "un-learnable" for a Deep Neural Network. Initiall work by both  Huang et al. and Liu et al. have shown promising results however more visually complex datasets have to be explored to further understand how exactly Unlearnable examples work.
 ## ImageNet-100-Pytorch-main 
 Directory to generate the subsets of different levels of visual complexity. The subsets are created from the ILSVRC-2012 dataset. To run this you need to have downloaded this [https://image-net.org/challenges/LSVRC/2012/2012-downloads.php]. 
 ### Generate the subsets
-Run the job.sh code to generate datasets of different visual complexity. In the folder tmp you can find the files min100.txt (100 visually simple classes), random.txt (100 classes of unknown complexity) and max100.txt (100 visually complex classes).
+Run the job.sh code to generate datasets of different visual complexity. In the folder tmp you can find the files min100.txt (100 visually simple classes), random.txt (100 classes of unknown complexity) and max100.txt (100 visually complex classes). The .txt files for the min100.txt and max100.txt have been created by calculating the entropy of each class in the ILSVRC-2012 dataset. The 100 classes with the highest entropy ( most visually complex ) were copied into the max100.txt file and the 100 classes with the lowest entropy ( most visually simple ) were copied into the min100.txt
 The arguments for the batch script  are:
 
 arguments:
   - `--source_folder`: specify the ILSVRC-2012 data folder (e.g., `~/ILSVRC2012/train`)
-  - `--target_folder`: specify the ImageNet-100 data folder (e.g., `~/imagenet-100/train`)
+  - `--target_folder`: specify the ImageNet-100 data folder (e.g., `~/Imagenet-100/train`)
   - `--target_class`: specify the ImageNet-100 txt file of different levels of visual complexity [ 'min100.txt','max100.txt','random.txt']
  An example of how to generate the train data for 100 visually simple classes is given as :
  ```
