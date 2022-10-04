@@ -2,7 +2,15 @@
 
 ## ImageNet-100-Pytorch-main 
 Directory to generate the subsets of different levels of visual complexity. The subsets are created from the ILSVRC-2012 (Imagenet-1k) dataset. To run this you need to have downloaded this [https://image-net.org/challenges/LSVRC/2012/2012-downloads.php]. 
+### Generate the subsets
+Run the job.sh code to generate datasets of different visual complexity. In the folder tmp you can find the files min100.txt (100 visually simple classes), random.txt (100 classes of unknown complexity) and max100.txt (100 visually complex classes).
+The arguments for the batch script  are:
 
+arguments:
+  - `--source_folder`: specify the ImageNet-1K data folder (e.g., `~/imagenet/train`)
+  - `--target_folder`: specify the ImageNet-100 data folder (e.g., `~/imagenet-100/train`)
+  - `--target_class`: specify the ImageNet-100 txt file of different levels of visual complexity [ 'min100.txt','max100.txt','random.txt']
+  
 ## Citation
 
 ```
