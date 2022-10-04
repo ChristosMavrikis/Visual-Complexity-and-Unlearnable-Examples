@@ -1,6 +1,7 @@
 ## Visual-Complexity-and-Unlearnable-Examples
 
-
+## ImageNet-100-Pytorch-main 
+Directory to generate the subsets of different levels of visual complexity. The subsets are created from the ILSVRC-2012 (Imagenet-1k) dataset. To run this you need to have downloaded this [https://image-net.org/challenges/LSVRC/2012/2012-downloads.php]. 
 
 ## Citation
 
