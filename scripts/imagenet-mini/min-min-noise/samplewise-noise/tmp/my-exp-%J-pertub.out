@@ -1,0 +1,29 @@
+
+
+###############################################################################
+Science Cluster
+Job 2080519 for user 'cmavrikis'
+Finished at: Sat May 28 10:04:08 CEST 2022
+
+Job details:
+============
+
+Name                : search_perturbation_noise.sh
+User                : cmavrikis
+Partition           : csedu
+Nodes               : cn48
+Cores               : 2
+State               : FAILED
+Submit              : 2022-05-28T10:03:59
+Start               : 2022-05-28T10:04:00
+End                 : 2022-05-28T10:04:07
+Reserved walltime   : 06:00:00
+Used walltime       : 00:00:07
+Used CPU time       : 00:00:02 (efficiency: 18.10%)
+% User (Computation): 79.01%
+% System (I/O)      : 20.96%
+Mem reserved        : 10G/node
+Max Mem used        : 0.00  (cn48)
+Max Disk Write      : 0.00  (cn48)
+Max Disk Read       : 0.00  (cn48)
+
