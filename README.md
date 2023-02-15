@@ -11,6 +11,8 @@ Please remove `mlconfig` from `models/__init__.py` if you are only using the not
 
 ## Experiments in the paper.
 Check scripts folder for *.sh for each corresponding experiments.
+## MS-COCO classification.
+We are the first to generate ULEs for the MS-COCO dataset. We trained a ResNet18 using MS-COCO subsets based on their different levels of visual complexity. The subsets were created either by measuring visual complexity based on the number of objects present or the number of unique classes present. 
 
 ## Sample-wise noise for unlearnable example on CIFAR-10
 ##### Generate noise for unlearnable examples
@@ -80,3 +82,6 @@ python3 -u main.py    --version                 resnet18                       \
     year={2021}
 }
 ```
+
+## Contact
+For any questions please contact me via e-mail: ch.mavrikis@gmail.com
